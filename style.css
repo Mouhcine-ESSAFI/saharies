@@ -29,7 +29,7 @@
 
   /* Custom styles that can't be handled with Tailwind utility classes */
     .stars-color {
-        color: #FFD700;
+        color: #FFB503;
     }
     .primary-color {
         color: #ff5722;
@@ -66,6 +66,6 @@ a:hover .svg-icon {
 
 .poppins-semibold {
   font-family: "Poppins", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-style: normal;
 }
