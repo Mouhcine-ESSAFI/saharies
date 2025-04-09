@@ -34,8 +34,14 @@
     .primary-color {
         color: #ff5722;
     }
+    .reviews-color {
+        color: #339999;
+    }
     .primary-bg {
         background-color: #ff5722;
+    }
+    .segondary-bg {
+        background-color: #fef8f0;
     }
     .button-bg-color {
         background-color: #3d3d46;
@@ -60,6 +66,6 @@ a:hover .svg-icon {
 
 .poppins-semibold {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   font-style: normal;
 }
