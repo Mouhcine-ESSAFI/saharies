@@ -310,11 +310,11 @@
     <div class="w-full segondary-bg pt-20">
         <!-- Top Tours Section -->
         <div class="responsive-container">
-            <h2 class="text-xl md:text-2xl poppins-semibold text-center mb-1">Warm Up to Savings: Top Tours for Winter 2025</h2>
+            <h2 class="text-xl md:text-3xl poppins-semibold text-center mb-1">Warm Up to Savings: Top Tours for Winter 2025</h2>
             <p class="text-center text-gray-600 text-sm md:text-lg mb-8">Limited-Time Offers You Can't Resist</p>
 
             <!-- Tour Cards Container -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 pb-20">
                 
                     <!-- new tour -->
                 <div class="max-w-sm w-full bg-white rounded-xl overflow-hidden shadow-lg">
@@ -324,23 +324,27 @@
                 
                       <!-- Sale Badge -->
                       <div class="absolute top-4 left-4">
-                        <div class="bg-red-500 text-white px-3 py-1 rounded-full font-medium">Sale</div>
+                        <div class="bg-red-500 text-white px-3 rounded-full poppins-semibold">Sale</div>
                       </div>
-                
-                      <!-- Login Tooltip -->
-                      <div class="absolute top-4 right-16">
-                        <div class="bg-white text-gray-700 px-3 py-1 rounded-full shadow-md text-sm">You need to login</div>
-                      </div>
-                
-                      <!-- Favorite Button -->
-                      <div class="absolute top-4 right-4">
-                        <button class="bg-orange-500 p-2 rounded-full shadow-md">
-                          <!-- Heart Icon -->
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
-                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
-                          </svg>
-                        </button>
-                      </div>
+
+                        <!-- Group wrapper for heart icon and tooltip -->
+                        <div class="absolute top-4 right-4 group">
+                        
+                            <!-- Tooltip shown on group hover -->
+                            <div class="absolute top-3 right-12 hidden group-hover:block">
+                                <div class="bg-white text-gray-700 px-2 rounded-lg shadow-md text-sm w-36 text-center">
+                                    You need to login
+                                </div>
+                            </div>
+                        
+                            <!-- Favorite Button -->
+                            <button class="p-2 rounded-full shadow-md w-11 h-11 flex justify-center items-center bg-transparent group-hover:bg-[#ff5722] transition">
+                            <!-- Heart Icon -->
+                            <svg width="22" height="20" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="text-white transition">
+                                <path d="M26.25,2.18A9.62,9.62,0,0,0,18,7.13A9.62,9.62,0,0,0,9.75,2.18A10.2,10.2,0,0,0,0,12.76C0,19.57,7.18,27,13.2,32.07a7.47,7.47,0,0,0,9.6,0C28.82,27,36,19.57,36,12.76A10.2,10.2,0,0,0,26.25,2.18ZM20.87,29.77a4.45,4.45,0,0,1-5.74,0C7.42,23.31,3,17.11,3,12.76A7.2,7.2,0,0,1,9.75,5.18a7.21,7.21,0,0,1,6.75,7.58a1.5,1.5,0,0,0,3,0a7.21,7.21,0,0,1,6.75-7.58A7.2,7.2,0,0,1,33,12.76c0,4.35-4.41,10.55-12.12,17Z" transform="translate(0 -2.18)"></path>
+                            </svg>
+                            </button>
+                        </div>
                     </div>
                 
                     <!-- Card Content - Overlapping the Image -->
@@ -426,10 +430,10 @@
                         <a href="#">
                             <button class="flex items-center space-x-2">
                                 <!-- Black Text -->
-                                <span class="text-black font-semibold">Explore</span>
+                                <span class="text-black poppins-semibold">Explore</span>
                                 <!-- Circle Background for SVG -->
-                                <span class="bg-orange-500 p-2 rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-white">
+                                <span class="bg-red-200 p-2 rounded-full w-7 h-7 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 primary-color">
                                         <path d="m9 18 6-6-6-6"/>
                                     </svg>
                                 </span>
@@ -438,13 +442,647 @@
                         </div>
                     </div>
                 </div>
+                    <!-- new tour -->
+                <div class="max-w-sm w-full bg-white rounded-xl overflow-hidden shadow-lg">
+                        <!-- Card Image Container with Sale Badge and Favorite Button -->
+                        <div class="relative">
+                          <img src="./images/card.jpg" alt="Desert Tour to Merzouga" class="w-full h-70 object-cover">
+                    
+                          <!-- Sale Badge -->
+                          <div class="absolute top-4 left-4">
+                            <div class="bg-red-500 text-white px-3 rounded-full poppins-semibold">Sale</div>
+                          </div>
+    
+                            <!-- Group wrapper for heart icon and tooltip -->
+                            <div class="absolute top-4 right-4 group">
+                            
+                                <!-- Tooltip shown on group hover -->
+                                <div class="absolute top-3 right-12 hidden group-hover:block">
+                                    <div class="bg-white text-gray-700 px-2 rounded-lg shadow-md text-sm w-36 text-center">
+                                        You need to login
+                                    </div>
+                                </div>
+                            
+                                <!-- Favorite Button -->
+                                <button class="p-2 rounded-full shadow-md w-11 h-11 flex justify-center items-center bg-transparent group-hover:bg-[#ff5722] transition">
+                                <!-- Heart Icon -->
+                                <svg width="22" height="20" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="text-white transition">
+                                    <path d="M26.25,2.18A9.62,9.62,0,0,0,18,7.13A9.62,9.62,0,0,0,9.75,2.18A10.2,10.2,0,0,0,0,12.76C0,19.57,7.18,27,13.2,32.07a7.47,7.47,0,0,0,9.6,0C28.82,27,36,19.57,36,12.76A10.2,10.2,0,0,0,26.25,2.18ZM20.87,29.77a4.45,4.45,0,0,1-5.74,0C7.42,23.31,3,17.11,3,12.76A7.2,7.2,0,0,1,9.75,5.18a7.21,7.21,0,0,1,6.75,7.58a1.5,1.5,0,0,0,3,0a7.21,7.21,0,0,1,6.75-7.58A7.2,7.2,0,0,1,33,12.76c0,4.35-4.41,10.55-12.12,17Z" transform="translate(0 -2.18)"></path>
+                                </svg>
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <!-- Card Content - Overlapping the Image -->
+                        <div class="relative bg-white rounded-t-2xl px-4 py-3 -mt-4 shadow-[0_-2px_10px_0_rgba(0,0,0,0.15)] z-20">
+                            <!-- Duration and Rating -->
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center text-gray-700">
+                                    <!-- Clock Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-orange-500 mr-1">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                    </svg>
+                                    <span class="text-sm poppins-semibold">3 days 2 nights</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="flex">
+                                    <!-- 5 Stars -->
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-600 ml-1">1416 reviews</span>
+                                </div>
+                            </div>
+    
+                             <!-- Divider -->
+                             <div class="border-t border-gray-200"></div>
+                    
+                            <!-- Title -->
+                            <h3 class="text-base poppins-regular text-gray-800 py-[10px]">3 Day Desert Tour from Marrakech to Merzouga</h3>
+    
+                            <!-- Features with Dividers -->
+                            <div class="grid grid-cols-3 mb-3">
+                            <div class="flex flex-col items-center border-r border-gray-200">
+                                <!-- Check Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                                <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span class="text-sm text-center text-gray-600">Free Cancelation</span>
+                            </div>
+                            <div class="flex flex-col items-center border-r border-gray-200">
+                                <!-- Calendar Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                                <line x1="16" x2="16" y1="2" y2="6"/>
+                                <line x1="8" x2="8" y1="2" y2="6"/>
+                                <line x1="3" x2="21" y1="10" y2="10"/>
+                                </svg>
+                                <span class="text-sm text-center text-gray-600">Daily Departures</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <!-- Map Pin Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span class="text-sm text-center text-gray-600">Pickup<br>Included</span>
+                            </div>
+                            </div>
+                    
+                            <!-- Divider -->
+                            <div class="border-t border-gray-200 my-3"></div>
+                    
+                            <!-- Price and CTA -->
+                            <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-teal-500">89€</span>
+                                <span class="text-xl text-gray-800 line-through ml-2">99€</span>
+                                <span class="text-gray-800 text-sm ml-1">/ person</span>
+                            </div>
+                            <a href="#">
+                                <button class="flex items-center space-x-2">
+                                    <!-- Black Text -->
+                                    <span class="text-black poppins-semibold">Explore</span>
+                                    <!-- Circle Background for SVG -->
+                                    <span class="bg-red-200 p-2 rounded-full w-7 h-7 flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 primary-color">
+                                            <path d="m9 18 6-6-6-6"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </a>
+                            </div>
+                        </div>
+                </div>
+
+                        <!-- new tour -->
+                <div class="max-w-sm w-full bg-white rounded-xl overflow-hidden shadow-lg">
+                    <!-- Card Image Container with Sale Badge and Favorite Button -->
+                    <div class="relative">
+                      <img src="./images/card.jpg" alt="Desert Tour to Merzouga" class="w-full h-70 object-cover">
                 
+                      <!-- Sale Badge -->
+                      <div class="absolute top-4 left-4">
+                        <div class="bg-red-500 text-white px-3 rounded-full poppins-semibold">Sale</div>
+                      </div>
+
+                        <!-- Group wrapper for heart icon and tooltip -->
+                        <div class="absolute top-4 right-4 group">
+                        
+                            <!-- Tooltip shown on group hover -->
+                            <div class="absolute top-3 right-12 hidden group-hover:block">
+                                <div class="bg-white text-gray-700 px-2 rounded-lg shadow-md text-sm w-36 text-center">
+                                    You need to login
+                                </div>
+                            </div>
+                        
+                            <!-- Favorite Button -->
+                            <button class="p-2 rounded-full shadow-md w-11 h-11 flex justify-center items-center bg-transparent group-hover:bg-[#ff5722] transition">
+                            <!-- Heart Icon -->
+                            <svg width="22" height="20" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="text-white transition">
+                                <path d="M26.25,2.18A9.62,9.62,0,0,0,18,7.13A9.62,9.62,0,0,0,9.75,2.18A10.2,10.2,0,0,0,0,12.76C0,19.57,7.18,27,13.2,32.07a7.47,7.47,0,0,0,9.6,0C28.82,27,36,19.57,36,12.76A10.2,10.2,0,0,0,26.25,2.18ZM20.87,29.77a4.45,4.45,0,0,1-5.74,0C7.42,23.31,3,17.11,3,12.76A7.2,7.2,0,0,1,9.75,5.18a7.21,7.21,0,0,1,6.75,7.58a1.5,1.5,0,0,0,3,0a7.21,7.21,0,0,1,6.75-7.58A7.2,7.2,0,0,1,33,12.76c0,4.35-4.41,10.55-12.12,17Z" transform="translate(0 -2.18)"></path>
+                            </svg>
+                            </button>
+                        </div>
+                    </div>
+                
+                    <!-- Card Content - Overlapping the Image -->
+                    <div class="relative bg-white rounded-t-2xl px-4 py-3 -mt-4 shadow-[0_-2px_10px_0_rgba(0,0,0,0.15)] z-20">
+                        <!-- Duration and Rating -->
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="flex items-center text-gray-700">
+                                <!-- Clock Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-orange-500 mr-1">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                <span class="text-sm poppins-semibold">3 days 2 nights</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex">
+                                <!-- 5 Stars -->
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                </div>
+                                <span class="text-sm text-gray-600 ml-1">1416 reviews</span>
+                            </div>
+                        </div>
+
+                         <!-- Divider -->
+                         <div class="border-t border-gray-200"></div>
+                
+                        <!-- Title -->
+                        <h3 class="text-base poppins-regular text-gray-800 py-[10px]">3 Day Desert Tour from Marrakech to Merzouga</h3>
+
+                        <!-- Features with Dividers -->
+                        <div class="grid grid-cols-3 mb-3">
+                        <div class="flex flex-col items-center border-r border-gray-200">
+                            <!-- Check Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                            <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span class="text-sm text-center text-gray-600">Free Cancelation</span>
+                        </div>
+                        <div class="flex flex-col items-center border-r border-gray-200">
+                            <!-- Calendar Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                            <line x1="16" x2="16" y1="2" y2="6"/>
+                            <line x1="8" x2="8" y1="2" y2="6"/>
+                            <line x1="3" x2="21" y1="10" y2="10"/>
+                            </svg>
+                            <span class="text-sm text-center text-gray-600">Daily Departures</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <!-- Map Pin Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span class="text-sm text-center text-gray-600">Pickup<br>Included</span>
+                        </div>
+                        </div>
+                
+                        <!-- Divider -->
+                        <div class="border-t border-gray-200 my-3"></div>
+                
+                        <!-- Price and CTA -->
+                        <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-2xl font-bold text-teal-500">89€</span>
+                            <span class="text-xl text-gray-800 line-through ml-2">99€</span>
+                            <span class="text-gray-800 text-sm ml-1">/ person</span>
+                        </div>
+                        <a href="#">
+                            <button class="flex items-center space-x-2">
+                                <!-- Black Text -->
+                                <span class="text-black poppins-semibold">Explore</span>
+                                <!-- Circle Background for SVG -->
+                                <span class="bg-red-200 p-2 rounded-full w-7 h-7 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 primary-color">
+                                        <path d="m9 18 6-6-6-6"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- new tour -->
+                <div class="max-w-sm w-full bg-white rounded-xl overflow-hidden shadow-lg">
+                        <!-- Card Image Container with Sale Badge and Favorite Button -->
+                        <div class="relative">
+                          <img src="./images/card.jpg" alt="Desert Tour to Merzouga" class="w-full h-70 object-cover">
+                    
+                          <!-- Sale Badge -->
+                          <div class="absolute top-4 left-4">
+                            <div class="bg-red-500 text-white px-3 rounded-full poppins-semibold">Sale</div>
+                          </div>
+    
+                            <!-- Group wrapper for heart icon and tooltip -->
+                            <div class="absolute top-4 right-4 group">
+                            
+                                <!-- Tooltip shown on group hover -->
+                                <div class="absolute top-3 right-12 hidden group-hover:block">
+                                    <div class="bg-white text-gray-700 px-2 rounded-lg shadow-md text-sm w-36 text-center">
+                                        You need to login
+                                    </div>
+                                </div>
+                            
+                                <!-- Favorite Button -->
+                                <button class="p-2 rounded-full shadow-md w-11 h-11 flex justify-center items-center bg-transparent group-hover:bg-[#ff5722] transition">
+                                <!-- Heart Icon -->
+                                <svg width="22" height="20" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="text-white transition">
+                                    <path d="M26.25,2.18A9.62,9.62,0,0,0,18,7.13A9.62,9.62,0,0,0,9.75,2.18A10.2,10.2,0,0,0,0,12.76C0,19.57,7.18,27,13.2,32.07a7.47,7.47,0,0,0,9.6,0C28.82,27,36,19.57,36,12.76A10.2,10.2,0,0,0,26.25,2.18ZM20.87,29.77a4.45,4.45,0,0,1-5.74,0C7.42,23.31,3,17.11,3,12.76A7.2,7.2,0,0,1,9.75,5.18a7.21,7.21,0,0,1,6.75,7.58a1.5,1.5,0,0,0,3,0a7.21,7.21,0,0,1,6.75-7.58A7.2,7.2,0,0,1,33,12.76c0,4.35-4.41,10.55-12.12,17Z" transform="translate(0 -2.18)"></path>
+                                </svg>
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <!-- Card Content - Overlapping the Image -->
+                        <div class="relative bg-white rounded-t-2xl px-4 py-3 -mt-4 shadow-[0_-2px_10px_0_rgba(0,0,0,0.15)] z-20">
+                            <!-- Duration and Rating -->
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center text-gray-700">
+                                    <!-- Clock Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-orange-500 mr-1">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                    </svg>
+                                    <span class="text-sm poppins-semibold">3 days 2 nights</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="flex">
+                                    <!-- 5 Stars -->
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-600 ml-1">1416 reviews</span>
+                                </div>
+                            </div>
+    
+                             <!-- Divider -->
+                             <div class="border-t border-gray-200"></div>
+                    
+                            <!-- Title -->
+                            <h3 class="text-base poppins-regular text-gray-800 py-[10px]">3 Day Desert Tour from Marrakech to Merzouga</h3>
+    
+                            <!-- Features with Dividers -->
+                            <div class="grid grid-cols-3 mb-3">
+                            <div class="flex flex-col items-center border-r border-gray-200">
+                                <!-- Check Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                                <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span class="text-sm text-center text-gray-600">Free Cancelation</span>
+                            </div>
+                            <div class="flex flex-col items-center border-r border-gray-200">
+                                <!-- Calendar Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                                <line x1="16" x2="16" y1="2" y2="6"/>
+                                <line x1="8" x2="8" y1="2" y2="6"/>
+                                <line x1="3" x2="21" y1="10" y2="10"/>
+                                </svg>
+                                <span class="text-sm text-center text-gray-600">Daily Departures</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <!-- Map Pin Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span class="text-sm text-center text-gray-600">Pickup<br>Included</span>
+                            </div>
+                            </div>
+                    
+                            <!-- Divider -->
+                            <div class="border-t border-gray-200 my-3"></div>
+                    
+                            <!-- Price and CTA -->
+                            <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-teal-500">89€</span>
+                                <span class="text-xl text-gray-800 line-through ml-2">99€</span>
+                                <span class="text-gray-800 text-sm ml-1">/ person</span>
+                            </div>
+                            <a href="#">
+                                <button class="flex items-center space-x-2">
+                                    <!-- Black Text -->
+                                    <span class="text-black poppins-semibold">Explore</span>
+                                    <!-- Circle Background for SVG -->
+                                    <span class="bg-red-200 p-2 rounded-full w-7 h-7 flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 primary-color">
+                                            <path d="m9 18 6-6-6-6"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </a>
+                            </div>
+                        </div>
+                </div>
+
+                        <!-- new tour -->
+                <div class="max-w-sm w-full bg-white rounded-xl overflow-hidden shadow-lg">
+                    <!-- Card Image Container with Sale Badge and Favorite Button -->
+                    <div class="relative">
+                      <img src="./images/card.jpg" alt="Desert Tour to Merzouga" class="w-full h-70 object-cover">
+                
+                      <!-- Sale Badge -->
+                      <div class="absolute top-4 left-4">
+                        <div class="bg-red-500 text-white px-3 rounded-full poppins-semibold">Sale</div>
+                      </div>
+
+                        <!-- Group wrapper for heart icon and tooltip -->
+                        <div class="absolute top-4 right-4 group">
+                        
+                            <!-- Tooltip shown on group hover -->
+                            <div class="absolute top-3 right-12 hidden group-hover:block">
+                                <div class="bg-white text-gray-700 px-2 rounded-lg shadow-md text-sm w-36 text-center">
+                                    You need to login
+                                </div>
+                            </div>
+                        
+                            <!-- Favorite Button -->
+                            <button class="p-2 rounded-full shadow-md w-11 h-11 flex justify-center items-center bg-transparent group-hover:bg-[#ff5722] transition">
+                            <!-- Heart Icon -->
+                            <svg width="22" height="20" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="text-white transition">
+                                <path d="M26.25,2.18A9.62,9.62,0,0,0,18,7.13A9.62,9.62,0,0,0,9.75,2.18A10.2,10.2,0,0,0,0,12.76C0,19.57,7.18,27,13.2,32.07a7.47,7.47,0,0,0,9.6,0C28.82,27,36,19.57,36,12.76A10.2,10.2,0,0,0,26.25,2.18ZM20.87,29.77a4.45,4.45,0,0,1-5.74,0C7.42,23.31,3,17.11,3,12.76A7.2,7.2,0,0,1,9.75,5.18a7.21,7.21,0,0,1,6.75,7.58a1.5,1.5,0,0,0,3,0a7.21,7.21,0,0,1,6.75-7.58A7.2,7.2,0,0,1,33,12.76c0,4.35-4.41,10.55-12.12,17Z" transform="translate(0 -2.18)"></path>
+                            </svg>
+                            </button>
+                        </div>
+                    </div>
+                
+                    <!-- Card Content - Overlapping the Image -->
+                    <div class="relative bg-white rounded-t-2xl px-4 py-3 -mt-4 shadow-[0_-2px_10px_0_rgba(0,0,0,0.15)] z-20">
+                        <!-- Duration and Rating -->
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="flex items-center text-gray-700">
+                                <!-- Clock Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-orange-500 mr-1">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                <span class="text-sm poppins-semibold">3 days 2 nights</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex">
+                                <!-- 5 Stars -->
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                </div>
+                                <span class="text-sm text-gray-600 ml-1">1416 reviews</span>
+                            </div>
+                        </div>
+
+                         <!-- Divider -->
+                         <div class="border-t border-gray-200"></div>
+                
+                        <!-- Title -->
+                        <h3 class="text-base poppins-regular text-gray-800 py-[10px]">3 Day Desert Tour from Marrakech to Merzouga</h3>
+
+                        <!-- Features with Dividers -->
+                        <div class="grid grid-cols-3 mb-3">
+                        <div class="flex flex-col items-center border-r border-gray-200">
+                            <!-- Check Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                            <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span class="text-sm text-center text-gray-600">Free Cancelation</span>
+                        </div>
+                        <div class="flex flex-col items-center border-r border-gray-200">
+                            <!-- Calendar Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                            <line x1="16" x2="16" y1="2" y2="6"/>
+                            <line x1="8" x2="8" y1="2" y2="6"/>
+                            <line x1="3" x2="21" y1="10" y2="10"/>
+                            </svg>
+                            <span class="text-sm text-center text-gray-600">Daily Departures</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <!-- Map Pin Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span class="text-sm text-center text-gray-600">Pickup<br>Included</span>
+                        </div>
+                        </div>
+                
+                        <!-- Divider -->
+                        <div class="border-t border-gray-200 my-3"></div>
+                
+                        <!-- Price and CTA -->
+                        <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-2xl font-bold text-teal-500">89€</span>
+                            <span class="text-xl text-gray-800 line-through ml-2">99€</span>
+                            <span class="text-gray-800 text-sm ml-1">/ person</span>
+                        </div>
+                        <a href="#">
+                            <button class="flex items-center space-x-2">
+                                <!-- Black Text -->
+                                <span class="text-black poppins-semibold">Explore</span>
+                                <!-- Circle Background for SVG -->
+                                <span class="bg-red-200 p-2 rounded-full w-7 h-7 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 primary-color">
+                                        <path d="m9 18 6-6-6-6"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- new tour -->
+                <div class="max-w-sm w-full bg-white rounded-xl overflow-hidden shadow-lg">
+                        <!-- Card Image Container with Sale Badge and Favorite Button -->
+                        <div class="relative">
+                          <img src="./images/card.jpg" alt="Desert Tour to Merzouga" class="w-full h-70 object-cover">
+                    
+                          <!-- Sale Badge -->
+                          <div class="absolute top-4 left-4">
+                            <div class="bg-red-500 text-white px-3 rounded-full poppins-semibold">Sale</div>
+                          </div>
+    
+                            <!-- Group wrapper for heart icon and tooltip -->
+                            <div class="absolute top-4 right-4 group">
+                            
+                                <!-- Tooltip shown on group hover -->
+                                <div class="absolute top-3 right-12 hidden group-hover:block">
+                                    <div class="bg-white text-gray-700 px-2 rounded-lg shadow-md text-sm w-36 text-center">
+                                        You need to login
+                                    </div>
+                                </div>
+                            
+                                <!-- Favorite Button -->
+                                <button class="p-2 rounded-full shadow-md w-11 h-11 flex justify-center items-center bg-transparent group-hover:bg-[#ff5722] transition">
+                                <!-- Heart Icon -->
+                                <svg width="22" height="20" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="text-white transition">
+                                    <path d="M26.25,2.18A9.62,9.62,0,0,0,18,7.13A9.62,9.62,0,0,0,9.75,2.18A10.2,10.2,0,0,0,0,12.76C0,19.57,7.18,27,13.2,32.07a7.47,7.47,0,0,0,9.6,0C28.82,27,36,19.57,36,12.76A10.2,10.2,0,0,0,26.25,2.18ZM20.87,29.77a4.45,4.45,0,0,1-5.74,0C7.42,23.31,3,17.11,3,12.76A7.2,7.2,0,0,1,9.75,5.18a7.21,7.21,0,0,1,6.75,7.58a1.5,1.5,0,0,0,3,0a7.21,7.21,0,0,1,6.75-7.58A7.2,7.2,0,0,1,33,12.76c0,4.35-4.41,10.55-12.12,17Z" transform="translate(0 -2.18)"></path>
+                                </svg>
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <!-- Card Content - Overlapping the Image -->
+                        <div class="relative bg-white rounded-t-2xl px-4 py-3 -mt-4 shadow-[0_-2px_10px_0_rgba(0,0,0,0.15)] z-20">
+                            <!-- Duration and Rating -->
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center text-gray-700">
+                                    <!-- Clock Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-orange-500 mr-1">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                    </svg>
+                                    <span class="text-sm poppins-semibold">3 days 2 nights</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="flex">
+                                    <!-- 5 Stars -->
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-600 ml-1">1416 reviews</span>
+                                </div>
+                            </div>
+    
+                             <!-- Divider -->
+                             <div class="border-t border-gray-200"></div>
+                    
+                            <!-- Title -->
+                            <h3 class="text-base poppins-regular text-gray-800 py-[10px]">3 Day Desert Tour from Marrakech to Merzouga</h3>
+    
+                            <!-- Features with Dividers -->
+                            <div class="grid grid-cols-3 mb-3">
+                            <div class="flex flex-col items-center border-r border-gray-200">
+                                <!-- Check Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                                <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span class="text-sm text-center text-gray-600">Free Cancelation</span>
+                            </div>
+                            <div class="flex flex-col items-center border-r border-gray-200">
+                                <!-- Calendar Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                                <line x1="16" x2="16" y1="2" y2="6"/>
+                                <line x1="8" x2="8" y1="2" y2="6"/>
+                                <line x1="3" x2="21" y1="10" y2="10"/>
+                                </svg>
+                                <span class="text-sm text-center text-gray-600">Daily Departures</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <!-- Map Pin Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span class="text-sm text-center text-gray-600">Pickup<br>Included</span>
+                            </div>
+                            </div>
+                    
+                            <!-- Divider -->
+                            <div class="border-t border-gray-200 my-3"></div>
+                    
+                            <!-- Price and CTA -->
+                            <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-teal-500">89€</span>
+                                <span class="text-xl text-gray-800 line-through ml-2">99€</span>
+                                <span class="text-gray-800 text-sm ml-1">/ person</span>
+                            </div>
+                            <a href="#">
+                                <button class="flex items-center space-x-2">
+                                    <!-- Black Text -->
+                                    <span class="text-black poppins-semibold">Explore</span>
+                                    <!-- Circle Background for SVG -->
+                                    <span class="bg-red-200 p-2 rounded-full w-7 h-7 flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 primary-color">
+                                            <path d="m9 18 6-6-6-6"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </a>
+                            </div>
+                        </div>
+                </div>
+
             </div>
         </div>
     </div>  
 
         <!-- Unforgettable Morocco Tours Section -->
-        <div class="mt-12 md:mt-16">
+        <div class="mt-12 md:mt-16 responsive-container">
             <div class="flex items-center justify-between mb-6">
                 <div class="flex items-center">
                     <span class="primary-color mr-3"><i class="fas fa-map-marker-alt text-xl md:text-2xl"></i></span>
@@ -464,134 +1102,386 @@
             </div>
 
             <!-- Popular Tours Container -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                <!-- Popular Tour 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden relative">
-                    <div class="absolute top-2 left-2 primary-bg text-white px-2 py-0.5 rounded text-xs font-semibold">Sale</div>
-                    <button class="absolute top-2 right-2 bg-white p-1.5 rounded-full shadow-md z-10 heart-icon">
-                        <i class="far fa-heart text-sm primary-color"></i>
-                    </button>
-                    <img src="./images/card.jpg" alt="Chefchaouen Tour" class="w-full h-48 object-cover">
-                    <div class="p-3 md:p-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 pb-20">
+                <!-- new tour -->
+                <div class="max-w-sm w-full bg-white rounded-xl overflow-hidden shadow-lg">
+                    <!-- Card Image Container with Sale Badge and Favorite Button -->
+                    <div class="relative">
+                    <img src="./images/card.jpg" alt="Desert Tour to Merzouga" class="w-full h-70 object-cover">
+                
+                    <!-- Sale Badge -->
+                    <div class="absolute top-4 left-4">
+                        <div class="bg-red-500 text-white px-3 rounded-full poppins-semibold">Sale</div>
+                    </div>
+
+                        <!-- Group wrapper for heart icon and tooltip -->
+                        <div class="absolute top-4 right-4 group">
+                        
+                            <!-- Tooltip shown on group hover -->
+                            <div class="absolute top-3 right-12 hidden group-hover:block">
+                                <div class="bg-white text-gray-700 px-2 rounded-lg shadow-md text-sm w-36 text-center">
+                                    You need to login
+                                </div>
+                            </div>
+                        
+                            <!-- Favorite Button -->
+                            <button class="p-2 rounded-full shadow-md w-11 h-11 flex justify-center items-center bg-transparent group-hover:bg-[#ff5722] transition">
+                            <!-- Heart Icon -->
+                            <svg width="22" height="20" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="text-white transition">
+                                <path d="M26.25,2.18A9.62,9.62,0,0,0,18,7.13A9.62,9.62,0,0,0,9.75,2.18A10.2,10.2,0,0,0,0,12.76C0,19.57,7.18,27,13.2,32.07a7.47,7.47,0,0,0,9.6,0C28.82,27,36,19.57,36,12.76A10.2,10.2,0,0,0,26.25,2.18ZM20.87,29.77a4.45,4.45,0,0,1-5.74,0C7.42,23.31,3,17.11,3,12.76A7.2,7.2,0,0,1,9.75,5.18a7.21,7.21,0,0,1,6.75,7.58a1.5,1.5,0,0,0,3,0a7.21,7.21,0,0,1,6.75-7.58A7.2,7.2,0,0,1,33,12.76c0,4.35-4.41,10.55-12.12,17Z" transform="translate(0 -2.18)"></path>
+                            </svg>
+                            </button>
+                        </div>
+                    </div>
+                
+                    <!-- Card Content - Overlapping the Image -->
+                    <div class="relative bg-white rounded-t-2xl px-4 py-3 -mt-4 shadow-[0_-2px_10px_0_rgba(0,0,0,0.15)] z-20">
+                        <!-- Duration and Rating -->
                         <div class="flex justify-between items-center mb-2">
-                            <div class="flex">
-                                <i class="fas fa-star stars-color text-xs"></i>
-                                <i class="fas fa-star stars-color text-xs"></i>
-                                <i class="fas fa-star stars-color text-xs"></i>
-                                <i class="fas fa-star stars-color text-xs"></i>
-                                <i class="fas fa-star stars-color text-xs"></i>
+                            <div class="flex items-center text-gray-700">
+                                <!-- Clock Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-orange-500 mr-1">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                <span class="text-sm poppins-semibold">3 days 2 nights</span>
                             </div>
-                            <span class="text-xs text-gray-600">(78 reviews)</span>
+                            <div class="flex items-center">
+                                <div class="flex">
+                                <!-- 5 Stars -->
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                </div>
+                                <span class="text-sm text-gray-600 ml-1">1416 reviews</span>
+                            </div>
                         </div>
-                        <h4 class="font-bold mb-1 text-sm md:text-base">Chefchaouen Private 2-Days Tour from Marrakech</h4>
-                        <div class="grid grid-cols-3 gap-1 mt-3 text-xs md:text-sm">
-                            <div>
-                                <p class="text-gray-500">Duration</p>
-                                <p class="font-semibold">2 days</p>
-                            </div>
-                            <div>
-                                <p class="text-gray-500">Group Size</p>
-                                <p class="font-semibold">Private</p>
-                            </div>
-                            <div>
-                                <p class="text-gray-500">Languages</p>
-                                <p class="font-semibold">Multi-language</p>
-                            </div>
+
+                        <!-- Divider -->
+                        <div class="border-t border-gray-200"></div>
+                
+                        <!-- Title -->
+                        <h3 class="text-base poppins-regular text-gray-800 py-[10px]">3 Day Desert Tour from Marrakech to Merzouga</h3>
+
+                        <!-- Features with Dividers -->
+                        <div class="grid grid-cols-3 mb-3">
+                        <div class="flex flex-col items-center border-r border-gray-200">
+                            <!-- Check Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                            <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span class="text-sm text-center text-gray-600">Free Cancelation</span>
                         </div>
-                        <div class="flex justify-between items-center mt-3">
-                            <div>
-                                <span class="text-gray-500 line-through text-xs">$220</span>
-                                <span class="text-lg md:text-xl font-bold primary-color">$190</span>
-                            </div>
-                            <button class="primary-bg text-white px-3 py-1.5 md:px-4 md:py-2 rounded-md text-sm">Explore</button>
+                        <div class="flex flex-col items-center border-r border-gray-200">
+                            <!-- Calendar Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                            <line x1="16" x2="16" y1="2" y2="6"/>
+                            <line x1="8" x2="8" y1="2" y2="6"/>
+                            <line x1="3" x2="21" y1="10" y2="10"/>
+                            </svg>
+                            <span class="text-sm text-center text-gray-600">Daily Departures</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <!-- Map Pin Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span class="text-sm text-center text-gray-600">Pickup<br>Included</span>
+                        </div>
+                        </div>
+                
+                        <!-- Divider -->
+                        <div class="border-t border-gray-200 my-3"></div>
+                
+                        <!-- Price and CTA -->
+                        <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-2xl font-bold text-teal-500">89€</span>
+                            <span class="text-xl text-gray-800 line-through ml-2">99€</span>
+                            <span class="text-gray-800 text-sm ml-1">/ person</span>
+                        </div>
+                        <a href="#">
+                            <button class="flex items-center space-x-2">
+                                <!-- Black Text -->
+                                <span class="text-black poppins-semibold">Explore</span>
+                                <!-- Circle Background for SVG -->
+                                <span class="bg-red-200 p-2 rounded-full w-7 h-7 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 primary-color">
+                                        <path d="m9 18 6-6-6-6"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Popular Tour 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden relative">
-                    <div class="absolute top-2 left-2 primary-bg text-white px-2 py-0.5 rounded text-xs font-semibold">Sale</div>
-                    <button class="absolute top-2 right-2 bg-white p-1.5 rounded-full shadow-md z-10 heart-icon">
-                        <i class="far fa-heart text-sm primary-color"></i>
-                    </button>
-                    <img src="./images/card.jpg" alt="Chefchaouen Tour" class="w-full h-48 object-cover">
-                    <div class="p-3 md:p-4">
+                <!-- new tour -->
+                <div class="max-w-sm w-full bg-white rounded-xl overflow-hidden shadow-lg">
+                    <!-- Card Image Container with Sale Badge and Favorite Button -->
+                    <div class="relative">
+                    <img src="./images/card.jpg" alt="Desert Tour to Merzouga" class="w-full h-70 object-cover">
+                
+                    <!-- Sale Badge -->
+                    <div class="absolute top-4 left-4">
+                        <div class="bg-red-500 text-white px-3 rounded-full poppins-semibold">Sale</div>
+                    </div>
+
+                        <!-- Group wrapper for heart icon and tooltip -->
+                        <div class="absolute top-4 right-4 group">
+                        
+                            <!-- Tooltip shown on group hover -->
+                            <div class="absolute top-3 right-12 hidden group-hover:block">
+                                <div class="bg-white text-gray-700 px-2 rounded-lg shadow-md text-sm w-36 text-center">
+                                    You need to login
+                                </div>
+                            </div>
+                        
+                            <!-- Favorite Button -->
+                            <button class="p-2 rounded-full shadow-md w-11 h-11 flex justify-center items-center bg-transparent group-hover:bg-[#ff5722] transition">
+                            <!-- Heart Icon -->
+                            <svg width="22" height="20" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="text-white transition">
+                                <path d="M26.25,2.18A9.62,9.62,0,0,0,18,7.13A9.62,9.62,0,0,0,9.75,2.18A10.2,10.2,0,0,0,0,12.76C0,19.57,7.18,27,13.2,32.07a7.47,7.47,0,0,0,9.6,0C28.82,27,36,19.57,36,12.76A10.2,10.2,0,0,0,26.25,2.18ZM20.87,29.77a4.45,4.45,0,0,1-5.74,0C7.42,23.31,3,17.11,3,12.76A7.2,7.2,0,0,1,9.75,5.18a7.21,7.21,0,0,1,6.75,7.58a1.5,1.5,0,0,0,3,0a7.21,7.21,0,0,1,6.75-7.58A7.2,7.2,0,0,1,33,12.76c0,4.35-4.41,10.55-12.12,17Z" transform="translate(0 -2.18)"></path>
+                            </svg>
+                            </button>
+                        </div>
+                    </div>
+                
+                    <!-- Card Content - Overlapping the Image -->
+                    <div class="relative bg-white rounded-t-2xl px-4 py-3 -mt-4 shadow-[0_-2px_10px_0_rgba(0,0,0,0.15)] z-20">
+                        <!-- Duration and Rating -->
                         <div class="flex justify-between items-center mb-2">
-                            <div class="flex">
-                                <i class="fas fa-star stars-color text-xs"></i>
-                                <i class="fas fa-star stars-color text-xs"></i>
-                                <i class="fas fa-star stars-color text-xs"></i>
-                                <i class="fas fa-star stars-color text-xs"></i>
-                                <i class="fas fa-star stars-color text-xs"></i>
+                            <div class="flex items-center text-gray-700">
+                                <!-- Clock Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-orange-500 mr-1">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                <span class="text-sm poppins-semibold">3 days 2 nights</span>
                             </div>
-                            <span class="text-xs text-gray-600">(78 reviews)</span>
+                            <div class="flex items-center">
+                                <div class="flex">
+                                <!-- 5 Stars -->
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                </div>
+                                <span class="text-sm text-gray-600 ml-1">1416 reviews</span>
+                            </div>
                         </div>
-                        <h4 class="font-bold mb-1 text-sm md:text-base">Chefchaouen Private 2-Days Tour from Marrakech</h4>
-                        <div class="grid grid-cols-3 gap-1 mt-3 text-xs md:text-sm">
-                            <div>
-                                <p class="text-gray-500">Duration</p>
-                                <p class="font-semibold">2 days</p>
-                            </div>
-                            <div>
-                                <p class="text-gray-500">Group Size</p>
-                                <p class="font-semibold">Private</p>
-                            </div>
-                            <div>
-                                <p class="text-gray-500">Languages</p>
-                                <p class="font-semibold">Multi-language</p>
-                            </div>
+
+                        <!-- Divider -->
+                        <div class="border-t border-gray-200"></div>
+                
+                        <!-- Title -->
+                        <h3 class="text-base poppins-regular text-gray-800 py-[10px]">3 Day Desert Tour from Marrakech to Merzouga</h3>
+
+                        <!-- Features with Dividers -->
+                        <div class="grid grid-cols-3 mb-3">
+                        <div class="flex flex-col items-center border-r border-gray-200">
+                            <!-- Check Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                            <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span class="text-sm text-center text-gray-600">Free Cancelation</span>
                         </div>
-                        <div class="flex justify-between items-center mt-3">
-                            <div>
-                                <span class="text-gray-500 line-through text-xs">$220</span>
-                                <span class="text-lg md:text-xl font-bold primary-color">$190</span>
-                            </div>
-                            <button class="primary-bg text-white px-3 py-1.5 md:px-4 md:py-2 rounded-md text-sm">Explore</button>
+                        <div class="flex flex-col items-center border-r border-gray-200">
+                            <!-- Calendar Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                            <line x1="16" x2="16" y1="2" y2="6"/>
+                            <line x1="8" x2="8" y1="2" y2="6"/>
+                            <line x1="3" x2="21" y1="10" y2="10"/>
+                            </svg>
+                            <span class="text-sm text-center text-gray-600">Daily Departures</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <!-- Map Pin Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span class="text-sm text-center text-gray-600">Pickup<br>Included</span>
+                        </div>
+                        </div>
+                
+                        <!-- Divider -->
+                        <div class="border-t border-gray-200 my-3"></div>
+                
+                        <!-- Price and CTA -->
+                        <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-2xl font-bold text-teal-500">89€</span>
+                            <span class="text-xl text-gray-800 line-through ml-2">99€</span>
+                            <span class="text-gray-800 text-sm ml-1">/ person</span>
+                        </div>
+                        <a href="#">
+                            <button class="flex items-center space-x-2">
+                                <!-- Black Text -->
+                                <span class="text-black poppins-semibold">Explore</span>
+                                <!-- Circle Background for SVG -->
+                                <span class="bg-red-200 p-2 rounded-full w-7 h-7 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 primary-color">
+                                        <path d="m9 18 6-6-6-6"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Popular Tour 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden relative">
-                    <div class="absolute top-2 left-2 primary-bg text-white px-2 py-0.5 rounded text-xs font-semibold">Sale</div>
-                    <button class="absolute top-2 right-2 bg-white p-1.5 rounded-full shadow-md z-10 heart-icon">
-                        <i class="far fa-heart text-sm primary-color"></i>
-                    </button>
-                    <img src="./images/card.jpg" alt="Chefchaouen Tour" class="w-full h-48 object-cover">
-                    <div class="p-3 md:p-4">
-                        <div class="flex justify-between items-center mb-2">
-                            <div class="flex">
-                                <i class="fas fa-star stars-color text-xs"></i>
-                                <i class="fas fa-star stars-color text-xs"></i>
-                                <i class="fas fa-star stars-color text-xs"></i>
-                                <i class="fas fa-star stars-color text-xs"></i>
-                                <i class="fas fa-star stars-color text-xs"></i>
-                            </div>
-                            <span class="text-xs text-gray-600">(78 reviews)</span>
+                <!-- new tour -->
+                <div class="max-w-sm w-full bg-white rounded-xl overflow-hidden shadow-lg">
+                        <!-- Card Image Container with Sale Badge and Favorite Button -->
+                        <div class="relative">
+                        <img src="./images/card.jpg" alt="Desert Tour to Merzouga" class="w-full h-70 object-cover">
+                    
+                        <!-- Sale Badge -->
+                        <div class="absolute top-4 left-4">
+                            <div class="bg-red-500 text-white px-3 rounded-full poppins-semibold">Sale</div>
                         </div>
-                        <h4 class="font-bold mb-1 text-sm md:text-base">Chefchaouen Private 2-Days Tour from Marrakech</h4>
-                        <div class="grid grid-cols-3 gap-1 mt-3 text-xs md:text-sm">
-                            <div>
-                                <p class="text-gray-500">Duration</p>
-                                <p class="font-semibold">2 days</p>
-                            </div>
-                            <div>
-                                <p class="text-gray-500">Group Size</p>
-                                <p class="font-semibold">Private</p>
-                            </div>
-                            <div>
-                                <p class="text-gray-500">Languages</p>
-                                <p class="font-semibold">Multi-language</p>
+
+                            <!-- Group wrapper for heart icon and tooltip -->
+                            <div class="absolute top-4 right-4 group">
+                            
+                                <!-- Tooltip shown on group hover -->
+                                <div class="absolute top-3 right-12 hidden group-hover:block">
+                                    <div class="bg-white text-gray-700 px-2 rounded-lg shadow-md text-sm w-36 text-center">
+                                        You need to login
+                                    </div>
+                                </div>
+                            
+                                <!-- Favorite Button -->
+                                <button class="p-2 rounded-full shadow-md w-11 h-11 flex justify-center items-center bg-transparent group-hover:bg-[#ff5722] transition">
+                                <!-- Heart Icon -->
+                                <svg width="22" height="20" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="text-white transition">
+                                    <path d="M26.25,2.18A9.62,9.62,0,0,0,18,7.13A9.62,9.62,0,0,0,9.75,2.18A10.2,10.2,0,0,0,0,12.76C0,19.57,7.18,27,13.2,32.07a7.47,7.47,0,0,0,9.6,0C28.82,27,36,19.57,36,12.76A10.2,10.2,0,0,0,26.25,2.18ZM20.87,29.77a4.45,4.45,0,0,1-5.74,0C7.42,23.31,3,17.11,3,12.76A7.2,7.2,0,0,1,9.75,5.18a7.21,7.21,0,0,1,6.75,7.58a1.5,1.5,0,0,0,3,0a7.21,7.21,0,0,1,6.75-7.58A7.2,7.2,0,0,1,33,12.76c0,4.35-4.41,10.55-12.12,17Z" transform="translate(0 -2.18)"></path>
+                                </svg>
+                                </button>
                             </div>
                         </div>
-                        <div class="flex justify-between items-center mt-3">
-                            <div>
-                                <span class="text-gray-500 line-through text-xs">$220</span>
-                                <span class="text-lg md:text-xl font-bold primary-color">$190</span>
+                    
+                        <!-- Card Content - Overlapping the Image -->
+                        <div class="relative bg-white rounded-t-2xl px-4 py-3 -mt-4 shadow-[0_-2px_10px_0_rgba(0,0,0,0.15)] z-20">
+                            <!-- Duration and Rating -->
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center text-gray-700">
+                                    <!-- Clock Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-orange-500 mr-1">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                    </svg>
+                                    <span class="text-sm poppins-semibold">3 days 2 nights</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="flex">
+                                    <!-- 5 Stars -->
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 stars-color fill-current" viewBox="0 0 20 20">
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-600 ml-1">1416 reviews</span>
+                                </div>
                             </div>
-                            <button class="primary-bg text-white px-3 py-1.5 md:px-4 md:py-2 rounded-md text-sm">Explore</button>
+
+                            <!-- Divider -->
+                            <div class="border-t border-gray-200"></div>
+                    
+                            <!-- Title -->
+                            <h3 class="text-base poppins-regular text-gray-800 py-[10px]">3 Day Desert Tour from Marrakech to Merzouga</h3>
+
+                            <!-- Features with Dividers -->
+                            <div class="grid grid-cols-3 mb-3">
+                            <div class="flex flex-col items-center border-r border-gray-200">
+                                <!-- Check Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                                <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span class="text-sm text-center text-gray-600">Free Cancelation</span>
+                            </div>
+                            <div class="flex flex-col items-center border-r border-gray-200">
+                                <!-- Calendar Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                                <line x1="16" x2="16" y1="2" y2="6"/>
+                                <line x1="8" x2="8" y1="2" y2="6"/>
+                                <line x1="3" x2="21" y1="10" y2="10"/>
+                                </svg>
+                                <span class="text-sm text-center text-gray-600">Daily Departures</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <!-- Map Pin Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-black mb-1">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span class="text-sm text-center text-gray-600">Pickup<br>Included</span>
+                            </div>
+                            </div>
+                    
+                            <!-- Divider -->
+                            <div class="border-t border-gray-200 my-3"></div>
+                    
+                            <!-- Price and CTA -->
+                            <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-teal-500">89€</span>
+                                <span class="text-xl text-gray-800 line-through ml-2">99€</span>
+                                <span class="text-gray-800 text-sm ml-1">/ person</span>
+                            </div>
+                            <a href="#">
+                                <button class="flex items-center space-x-2">
+                                    <!-- Black Text -->
+                                    <span class="text-black poppins-semibold">Explore</span>
+                                    <!-- Circle Background for SVG -->
+                                    <span class="bg-red-200 p-2 rounded-full w-7 h-7 flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 primary-color">
+                                            <path d="m9 18 6-6-6-6"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </a>
+                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
