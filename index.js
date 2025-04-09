@@ -111,17 +111,64 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Navbar Scroll Effect
   const navbar = document.getElementById("navbar");
+  const scrollNavbar = document.getElementById("scroll-navbar");
 
   window.addEventListener("scroll", () => {
-    if (window.innerWidth < 1024) { // Check if the screen width is less than 1024px
+    if (window.innerWidth < 1024) {
+      // Check if the screen width is less than 1024px
       if (window.scrollY > 120) {
-        navbar.classList.add("fixed", "shadow-md", "top-0", "left-0", "right-0", "z-30");
+        navbar.classList.add(
+          "fixed",
+          "shadow-md",
+          "top-0",
+          "left-0",
+          "right-0",
+          "z-30"
+        );
       } else {
-        navbar.classList.remove("fixed", "shadow-md", "top-0", "left-0", "right-0", "z-30");
+        navbar.classList.remove(
+          "fixed",
+          "shadow-md",
+          "top-0",
+          "left-0",
+          "right-0",
+          "z-30"
+        );
       }
     } else {
       // Remove the classes if the screen width is >= 1024px
-      navbar.classList.remove("fixed", "shadow-md", "top-0", "left-0", "right-0", "z-30");
+      navbar.classList.remove(
+        "fixed",
+        "shadow-md",
+        "top-0",
+        "left-0",
+        "right-0",
+        "z-30"
+      );
+    }
+
+    if (window.innerWidth > 1024 && window.scrollY > 150) {
+      // Show the new minimal navbar
+      scrollNavbar.classList.remove("hidden");
+      scrollNavbar.classList.add("flex");
+    } else {
+      // Hide the new minimal navbar
+      scrollNavbar.classList.add("hidden");
+      scrollNavbar.classList.remove("flex");
     }
   });
+
+  // Save the scroll position before the page unloads
+  window.addEventListener("beforeunload", () => {
+    sessionStorage.setItem("scrollPosition", window.scrollY);
+  });
+
+  // Restore the scroll position on page load with smooth scrolling
+  const savedScrollPosition = sessionStorage.getItem("scrollPosition");
+  if (savedScrollPosition) {
+    window.scrollTo({
+      top: parseInt(savedScrollPosition, 10),
+      behavior: "smooth",
+    });
+  }
 });
