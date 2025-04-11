@@ -62,6 +62,7 @@ a:hover .svg-icon {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  line-height: 24px;
 }
 
 .poppins-semibold {
