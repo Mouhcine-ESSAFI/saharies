@@ -171,4 +171,27 @@ document.addEventListener("DOMContentLoaded", function () {
       behavior: "smooth",
     });
   }
+
+  const swiper = new Swiper('.popular-tours-swiper', {
+    slidesPerView: 3,
+    slidesPerGroup: 1,
+    spaceBetween: 15,
+    loop: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1.1,
+      },
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    },
+    navigation: {
+      nextEl: '.swiper-button-next-custom',
+      prevEl: '.swiper-button-prev-custom',
+    },
+  });
+
 });
